@@ -135,5 +135,5 @@ export default (state: State = initialState, action: Action = {}) => {
 export const getNextActionForProjectId = (state: any, projectId: string) =>
   state.queue[projectId] && state.queue[projectId][0];
 
-export const isQueueEmpty = (state: any, projectId: string) =>
+export const getIsQueueEmpty = (state: any, projectId: string) =>
   !getNextActionForProjectId(state, projectId);
